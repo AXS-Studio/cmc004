@@ -1,0 +1,188 @@
+@media (min-width: 800px) {
+
+form#login, form#reset {
+  width: 300px;
+  margin:50px auto;
+}
+
+article div.change-pwd, div.message div.change-pwd, #art-forgot{
+  width:300px;
+  margin: 0px auto;
+}
+
+#art-forgot {
+  margin-top:10px;
+
+}
+
+
+
+#graph-nav a.btnmenu, #graph-header a.btnmenu{
+  /*display: none;*/
+
+}
+
+#graph-header a.btnmenu.external {
+  top:0px;
+  right:0px;
+  /*position: fixed;*/
+  z-index: 10;
+}
+
+#graph-nav  a.btnmenu.internal, #graph-header a.btnmenu.external  { 
+   background-image: url("../images/drawer-button.png");
+   background-size: 25px 150px;
+    width:25px;
+    height:150px;
+
+  }
+
+
+#graph-nav a.btnmenu.internal{
+  left:-26px;
+  top:0px;
+
+}
+
+
+/*header.sb {
+  background: none;
+  border:none;
+}*/
+
+#content_quiz {
+  width:800px;
+  margin:0px auto;
+}
+
+.qCont {
+  width:800px;
+  margin:0px auto;
+}
+
+article form fieldset div.rowActive {
+  border-radius:20px;
+}
+
+article nav.backNext {
+  position: absolute;
+  width:800px;
+  /*margin:0px auto;*/
+  bottom:-100px;
+  background:none;
+  box-shadow: none;
+  border-bottom: none;
+}
+
+article div#middle {
+  top:20%;
+}
+
+#page_settings {
+  width:800px;
+  margin:0px auto;
+}
+
+#graph-menu {
+  width:300px; /*!important; */
+  position: absolute;
+  overflow-y: none;
+  float:right;
+  right:0px; /*!important; */
+  top:0px; /*!important; */
+  /*border-top:1px solid #ccc;*/
+  display:block;
+  box-shadow:  none;
+  height: auto;
+  border-left: 1px solid #ccc;
+  min-height: 100%;
+  padding-bottom: 12%;
+}
+
+#graph-header {
+  background: #fff;
+  position: static;
+}
+
+#graph-nav a.tab {
+  width: 33%;
+}
+
+#graph-nav a.tab.selected:last-child {
+  border-right:none;
+
+}
+
+#graph-menu #content {
+  overflow-y: visible;
+}
+
+#graph-menu {
+
+}
+
+.sp-container {
+  width:350px;
+  left:auto;
+  right:400px;
+}
+
+body .page-wrap {
+  /*padding-top:  40px;*/
+}
+
+footer {
+  position: fixed;
+  left:0px;
+  border-top: 1px solid #ccc;
+  z-index: 2000;
+}
+
+/* top */ 
+footer {
+    /*border-bottom: 1px solid #ccc;
+    top:0px;*/
+}
+
+
+footer .nav::before {
+  content: "";
+  background: url("../images/MHT_logo.png") no-repeat;
+  background-size: 66px 22px;
+  margin:7px 20px 0px 0px;
+  width: 66px;
+  height:25px;
+  display: block;
+  float:left;
+}
+
+footer .nav {
+  position: absolute;
+  left:20px;
+}
+
+footer .nav li {
+  width:100px;
+
+}
+
+footer .nav li a {
+  border-top:none;
+  /*padding-top: 28px;*/
+}
+
+footer .nav li a#nav-settings {
+  border-right:1px solid #BCBEC0;
+}
+
+footer .nav li a#nav-timeline {
+  border-left:1px solid #BCBEC0;
+}
+
+article p.forgot {
+  float:right;
+  line-height: 40px;
+  margin:0px 10px;
+}
+
+}
