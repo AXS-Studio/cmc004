@@ -13,11 +13,6 @@ $userEmail = $_REQUEST['userId'];
 $password = $_REQUEST['password'];
 $remember = $_REQUEST['remember'];
 
-//For Cindy's debugging only
-//$userEmail = 'Cindy.Lau@axs3d.com';
-//$password='password';
-//checkCookie();
-//$result = 999;
 $result = confirmUser($userEmail, $password, $remember);
 
 // Check error codes (1: username error, 2: password error)

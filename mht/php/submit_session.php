@@ -2,6 +2,9 @@
 session_start();
 require_once("database.php");
 
+// THIS IS NOT USED
+// Probably created in case MHTVP sessions are someday to be saved in database
+
 $myResponse	= array();	 //Create array to return session data
 
 $action = $_REQUEST['action'];

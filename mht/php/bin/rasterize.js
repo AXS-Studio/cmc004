@@ -1,3 +1,4 @@
+// Rasterize.js used with phantomJS to render PDF/PNGs for screenshots
 var page = require('webpage').create(),
     system = require('system'),
     address, output, size;

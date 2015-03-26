@@ -8,7 +8,7 @@ require_once("PHPMailer/PHPMailerAutoload.php");
 //Steps
 //1. Receive raw html
 //2. Create temporary page locally
-//3. Run page in phantomjs to create screencapture
+//3. Run page in phantomjs (headless browser) to create screencapture
 //4. Send back to client
 
 //Exit if error (for sendEmail=false)
@@ -100,7 +100,7 @@ fclose($handle);
 //session_write_close();
 
 //Run phantomJS to screenshot local html page into png
-//Cannot use phantomjs from bin (built for windows/OSX), must install linux version of phantomjs into server
+//Cannot use phantomjs from bin (built for windows/OSX), must install linux version of phantomjs into server (do so in Ubuntu through VPN)
 $command = "sudo /usr/bin/phantomjs bin/rasterize.js ".$file.".html ".$file.".pdf '".$windowWidth/72.0."in*".$windowHeight/72.0."in' 2>&1 1> /dev/null"; //server version
 //$command = "bin/phantomjs bin/rasterize.js ".$file.".html ".$file.".pdf '8.5in*11in' 2>&1 1> /dev/null"; //localhost version
 $output = shell_exec($command);
