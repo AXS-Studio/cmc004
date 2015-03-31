@@ -440,7 +440,7 @@ var GenerateSwatches = function() {
 
 }; //end Generate swatches
 
-var defaultQuestions = ["QIDS_0", "VAS_0", "ASRM_0"]; //"ASRM_4", "ASRM_0"
+var defaultQuestions = ["MC5_0", "MC2_0", "VAS_0"]; //temporary for now
 var defaultColors = ['rgba(85,98,112,1.0)', 'rgba(255,107,107,1.0)', 'rgba(199,244,100,1.0)', 'rgba(78,205,196,1.0)']; //,'rgba(78,205,196,1.0)'
 
 var defaultColorIndex = 0;

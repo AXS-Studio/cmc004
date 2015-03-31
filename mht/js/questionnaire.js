@@ -1,3 +1,4 @@
+//This probably isn't being used and is just a template for the prev. developers reference
 var questionnaire = {
 	"patientID": "email@address.com",
 	"sessionID": "0123456789",

@@ -351,7 +351,7 @@ var Quiz = (function() {
         });
     };
 
-    var other = function(id) {
+    var mc2 = function(id) {
 
         $('#art-').attr('id', 'art-' + id);
         $('#days-').attr('id', 'days-' + id);
@@ -423,7 +423,7 @@ var Quiz = (function() {
         // Resize.setSizes();
     };
 
-    var asrm = function(id) {
+    var mc5 = function(id) {
 
         $('#art-').attr('id', 'art-' + id);
         $('#days-').attr('id', 'days-' + id);
@@ -505,7 +505,7 @@ var Quiz = (function() {
         // Resize.setSizes();
     };
 
-    var qids = function(id) {
+    var mc4 = function(id) {
 
         $('#art-').attr('id', 'art-' + id);
         $('#days-').attr('id', 'days-' + id);
@@ -672,16 +672,16 @@ var Quiz = (function() {
             if (type == 'VAS') {
                 $('#content_quiz').html(Pages.range);
                 vas(id);
-            } else if (type == 'QIDS') {
+            } else if (type == 'MC4') {
                 $('#content_quiz').html(Pages.mc4);
-                qids(id);
+                mc4(id);
 
-            } else if (type == 'ASRM') {
+            } else if (type == 'MC5') {
                 $('#content_quiz').html(Pages.mc5);
-                asrm(id);
-            } else /*if (type == 'OTHER') */ {
+                mc5(id);
+            } else if (type == 'MC2') {
                 $('#content_quiz').html(Pages.other);
-                other(id);
+                mc2(id);
             }
         }
 

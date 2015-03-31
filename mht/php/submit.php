@@ -89,13 +89,14 @@ if (isset($_REQUEST['results']))
 		}//end foreach
 		$stmt->close();
 		
-		//Update aggregate score
-		$score = getAggregate($patientID, $answerArray);
+		//Update aggregate score (not used in CMC004 for now)-----------------
+		//$score = getAggregate($patientID, $answerArray);
 		
 		//Insert depression score
-		$q = "INSERT INTO `Answers`(`PatientID`, `SessionID`, `Date`, `QuestionID`, `Answer`, `Flipped`) VALUES ('$patientID','$sessionID','$date','SCORE_0',$score,0)";
-		$result = $mysqli->query($q);
-		
+		//$q = "INSERT INTO `Answers`(`PatientID`, `SessionID`, `Date`, `QuestionID`, `Answer`, `Flipped`) VALUES ('$patientID','$sessionID','$date','SCORE_0',$score,0)";
+		//$result = $mysqli->query($q);
+		//--------------------------------------------------------------------
+
 		//$myResponse['debug'] = $mysqli->error;
 		
 		//Insert tags
@@ -137,7 +138,7 @@ if (isset($_REQUEST['results']))
 echo json_encode($myResponse);
 exit();
 
-//Converts multiple choice answers to numerical ones
+//Converts multiple choice answers (Anchor_0, Anchor_1 etc.) to numerical ones
 function convertAnswer($answer, $questionID){
 	$arr = explode("_", $questionID, 2); //eg. explode VAS_0 at "_"
 	$questionType = $arr[0]; //take the first item
@@ -160,7 +161,7 @@ function convertAnswer($answer, $questionID){
 	return (int) $answer;
 }
 
-//Computes aggregate score
+//Computes aggregate score - not used in CMC004 for now. Read up the manual for Dr. David's pseudo-code algorithmn.
 function getAggregate($patientID, $answerArray){
 		
 	//List of depression items
