@@ -17,9 +17,9 @@ $clinicianID="axstest";
 
 $defaultQuestionArray = array("MC5_0","MC2_0","VAS_0","VAS_1"); //Array containing questionIDs to be queried. Arbitrary for now.
 
-//QuestionIDs minus default set.
-$fullQuestionArray = array(	"MC5_1","MC5_2","MC5_3","MC5_4","MC5_5","MC5_6","MC5_7","MC5_8","MC5_9","MC5_10","MC5_11","MC5_12","MC5_13","MC5_14",							
-							"VAS_2","VAS_3","VAS_4","VAS_5","VAS_6","VAS_7","VAS_8","VAS_9","VAS_10",
+//All QuestionIDs
+$fullQuestionArray = array(	"MC5_0","MC5_1","MC5_2","MC5_3","MC5_4","MC5_5","MC5_6","MC5_7","MC5_8","MC5_9","MC5_10","MC5_11","MC5_12","MC5_13","MC5_14",							
+							"VAS_0","VAS_1","VAS_2","VAS_3","VAS_4","VAS_5","VAS_6","VAS_7","VAS_8","VAS_9","VAS_10",
 							"VAS_11","VAS_12","VAS_13","VAS_14","VAS_15","VAS_16","VAS_17","VAS_18","VAS_19","VAS_20",
 							"VAS_21","VAS_22","VAS_23");
 											
