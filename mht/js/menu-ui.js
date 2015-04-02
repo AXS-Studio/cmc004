@@ -500,11 +500,10 @@ function addSwatches() {
                 graphColors.push(newGraphColor);
             }
 
-
-            $('#legend-header').append('<li id="legend-SCORE_0" class="legend-popup" style="display:none;"><span class="swatches" id="swatch-SCORE_0"></span><span>QIDS Score</span></li>');
-            $('#swtchs-legend').append('<li id="legend-menu-SCORE_0"><span class="swatches" id="swatch-SCORE_0"></span> <span>QIDS Score</span></li>');
-            $('#swtchs-edit').append('<li><a href="#" title="Change QIDS Score\'s colour" class="swatches" id="swatch-SCORE_0"></a><span id="text-SCORE_0">QIDS Score</span></li>');
-            //$('#swtchs-edit').append('<li><a href="#" title="Change ' + name + '\'s colour" id="swatch-' + id + '"></a> <span>' + name + '</span></li>');
+            //There is no aggregate score in MHT-ANX yet, let's hide this
+            // $('#legend-header').append('<li id="legend-SCORE_0" class="legend-popup" style="display:none;"><span class="swatches" id="swatch-SCORE_0"></span><span>Score</span></li>');
+            // $('#swtchs-legend').append('<li id="legend-menu-SCORE_0"><span class="swatches" id="swatch-SCORE_0"></span> <span>Score</span></li>');
+            // $('#swtchs-edit').append('<li><a href="#" title="Change Score\'s colour" class="swatches" id="swatch-SCORE_0"></a><span id="text-SCORE_0">Score</span></li>');
         }
 
         $('#scs ul.swatches li a').click(function() {
